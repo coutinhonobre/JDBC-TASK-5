@@ -11,4 +11,8 @@ public class FactoryDAO {
 	public static AlunoDAO createAlunoDAO() {
 		return new AlunoDAOImpl(DB.getConexao());
 	}
+	
+	public static DisciplinaDao createDisciplinaDao() {
+		return new DisciplinaDaoImpl(DB.getConexao());
+	}
 }
